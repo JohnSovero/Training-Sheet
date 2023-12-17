@@ -12,10 +12,11 @@ ll gcd(ll a, ll b){
 }
 
 ll lcm(ll a, ll b){
-    a /= gcd(a,b);
+    a = a/ gcd(a,b);
     return (a > MAXLL / b)? MAXLL : a*b;
 }
 
+//0110
 int32_t main(){
     scanf("%lld", &t);
     while(t--){
